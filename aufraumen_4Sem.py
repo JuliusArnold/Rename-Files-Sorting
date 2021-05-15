@@ -8,7 +8,7 @@ count = 0
 print(": ")
 print(":Theo4:")
 print("ÜB: ") 
-path1 = "/home/julius/4-Sem/Theo4/ÜB/"
+path1 = "/home/retro/4-Sem/Theo4/ÜB/"
 for file in os.listdir(path1):
 	if 'Theo4' in file:
 		pass
@@ -30,7 +30,7 @@ for file in os.listdir(path1):
 # Theo4 Lösungen
 print(": ")
 print("Lsg_ÜB: ") 
-path2 = "/home/julius/4-Sem/Theo4/ÜB/Lsg_ÜB/"
+path2 = "/home/retro/4-Sem/Theo4/ÜB/Lsg_ÜB/"
 for file in os.listdir(path2):
 	if 'Theo4' in file:
 		pass
@@ -52,7 +52,7 @@ for file in os.listdir(path2):
 print(": ")
 print(":Ex4:")
 print("ÜB: ") 
-path3 = "/home/julius/4-Sem/Ex4/ÜB/"
+path3 = "/home/retro/4-Sem/Ex4/ÜB/"
 
 for file in os.listdir(path3):
 	if 'Ex4' in file:
@@ -78,7 +78,7 @@ for file in os.listdir(path3):
 print(": ")
 print(":Alda1:")
 print("ÜB: ") 
-path4 = "/home/julius/4-Sem/IAD/ÜB/"
+path4 = "/home/retro/4-Sem/IAD/ÜB/"
 for file in os.listdir(path4):
 	if "IAD" in file:
 		pass 
@@ -101,7 +101,7 @@ for file in os.listdir(path4):
 print(": ")
 print(":MMP1:")
 print("ÜB: ") 
-path5 = "/home/julius/4-Sem/MMP/ÜB/"
+path5 = "/home/retro/4-Sem/MMP/ÜB/"
 for file in os.listdir(path5):
 	if "MMP1" in file:
 		pass 
