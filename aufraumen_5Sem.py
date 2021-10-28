@@ -39,7 +39,7 @@ print(":Alda2:")
 print("ÜB: ") 
 path4 = "/home/julius/5-Sem/IAD2/ÜB/"
 for file in os.listdir(path4):
-	if "IAD" in file:
+	if "IAD2" in file:
 		pass 
 	else:
 		ending = file.split(".")[-1]
@@ -48,7 +48,28 @@ for file in os.listdir(path4):
 			if len(number)<2:
 				number = "0"+number 
 			
-			new_name_iad = "Blatt_IAD_" + number + ".pdf"
+			new_name_iad = "Blatt_IAD2_" + number + ".pdf"
+			old_file_path = path4 + file
+			new_file_path = path4 + new_name_iad
+			os.rename(old_file_path,new_file_path)
+			count+=1
+			print(file + " --> " + new_name_iad)
+
+print(": ")
+print(":BIC:")
+print("ÜB: ") 
+path4 = "/home/julius/5-Sem/BIC/ÜB/"
+for file in os.listdir(path4):
+	if "BIC" in file:
+		pass 
+	else:
+		ending = file.split(".")[-1]
+		if ending == "pdf":
+			number = file.split("_")[0][8:]
+			if len(number)<2:
+				number = "0"+number 
+			
+			new_name_iad = "Blatt_BIC_" + number + ".pdf"
 			old_file_path = path4 + file
 			new_file_path = path4 + new_name_iad
 			os.rename(old_file_path,new_file_path)
