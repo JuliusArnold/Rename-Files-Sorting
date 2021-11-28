@@ -76,6 +76,31 @@ for file in os.listdir(path4):
 			count+=1
 			print(file + " --> " + new_name_iad)
 
+
+#FML Übungsblätter
+print(": ")
+print(":FML:")
+print("ÜB: ") 
+path5 = "/home/julius/5-Sem/ML_21-22/ÜB/"
+
+for file in os.listdir(path5):
+    if 'Blatt_FML' in file:
+        pass 
+    else:
+        ending = file.split('.')[-1]
+        if ending == "pdf":
+            number = file.split(".")[4].split(" ")[1]
+            print(number)
+            if (len(number)<2):
+                number = "0" + number
+            new_name_ex = "Blatt_FML_" + number +".pdf"
+
+            old_file_path = path5 + file
+            new_file_path = path5 + new_name_ex 
+            os.rename(old_file_path,new_file_path)
+            count +=1
+            print(file + " --> " + new_name_ex)
+
 print(" ")
 print(": ")
 print(": ")	
