@@ -1,4 +1,4 @@
-i#!/usr/bin/env python
+#!/usr/bin/env python
 # coding: utf-8
 
 import os 
@@ -11,7 +11,7 @@ import datetime
 
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
-
+import subprocess
 #import pandas
 #import pickle # save Data
 
@@ -25,18 +25,24 @@ from scipy.optimize import curve_fit
 #_____________________________________________________________________
 
 
-def get_pwd():
-    pass # Should return current pwd later should run with os.
 
 def main():
-    pwd = get_pwd()
-    #list pdf of pwd 
-    open latest
-    pass
+    wd = os.getcwd()
+    #print(wd)
+    
+    pdfs = []
+    list_wd = sorted(os.listdir(wd))
+    for file in list_wd:
+        if file.split('.')[-1] == "pdf":
+            pdfs.append(file)
+    #print(pdfs[-1])
+    path = wd + "/" + pdfs[-1]
+    #print(path)
+    subprocess.call(["xdg-open",path])
+    #open latest
 
 
 
 
 if __name__ == "__main__":
     main()
-
